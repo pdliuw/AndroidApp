@@ -2,7 +2,7 @@
 
 [https://developer.android.com/guide/topics/permissions/overview](https://developer.android.com/guide/topics/permissions/overview "参考文献")
 
-								[English document](/README_EN.md)
+								[English document](https://github.com/pdliuw/AndroidApp/blob/master/permission/README_EN.md "English document")
 
 ----------
 
