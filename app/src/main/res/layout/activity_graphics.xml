@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphicsActivity">
+
+
+    <ImageView
+        android:id="@+id/before_compress_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round" />
+
+
+    <ImageView
+        android:id="@+id/after_compress_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/before_compress_img" />
+
+    <EditText
+        android:id="@+id/inSampleSize_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="大于1的2次幂的数"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/after_compress_img" />
+
+    <Button
+        android:id="@+id/compress_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="压缩图片"
+        app:layout_constraintTop_toBottomOf="@id/inSampleSize_et" />
+
+    <Button
+        android:id="@+id/start_openGL_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="OpenGraphicsLibrary(OpenGL)"
+        app:layout_constraintTop_toTopOf="@id/compress_btn"
+        app:layout_constraintLeft_toRightOf="@id/compress_btn"/>
+
+    <ImageView
+        android:id="@+id/palette_origin_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/leak_canary_icon"
+        app:layout_constraintTop_toBottomOf="@id/compress_btn" />
+
+    <TextView
+        android:id="@+id/palette_vibrate_place_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Dark"
+        app:layout_constraintDimensionRatio="W,1:4"
+        app:layout_constraintTop_toBottomOf="@id/palette_origin_img"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/palette_vibrate_place_title_color_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Title text color"
+        app:layout_constraintDimensionRatio="W,1:4"
+        app:layout_constraintTop_toBottomOf="@id/palette_vibrate_place_tv"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/palette_vibrate_place_body_color_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Body text color"
+        app:layout_constraintDimensionRatio="W,1:4"
+        app:layout_constraintTop_toBottomOf="@id/palette_vibrate_place_title_color_tv"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/palette_vibrate_place_argb_color_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="ARGB"
+        app:layout_constraintDimensionRatio="W,1:4"
+        app:layout_constraintTop_toBottomOf="@id/palette_vibrate_place_body_color_tv"
+        app:layout_constraintWidth_percent="0.5" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationActivity">
+
+    <Button
+        android:id="@+id/start_vector_anim_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Vector Anim"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/start_transition_anim_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Vector Anim"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_vector_anim_btn" />
+
+    <Button
+        android:id="@+id/transition_anim_tested_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="@id/start_transition_anim_btn"
+        app:layout_constraintRight_toRightOf="@id/start_transition_anim_btn"
+        app:layout_constraintTop_toBottomOf="@id/start_transition_anim_btn" />
+
+    <ImageView
+        android:id="@+id/start_vector_drawable_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transition_anim_tested_btn" />
+
+</android.support.constraint.ConstraintLayout>

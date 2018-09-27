@@ -1,0 +1,1 @@
+include ':app', ':base', ':common', ':animation', ':dialog', ':widget', ':permission', ':screencompatibility', ':camera', ':ocr', ':ocr_ui', ':graphics', ':media', ':task', ':ui', ':net'
