@@ -2,7 +2,7 @@
 
 [https://developer.android.com/guide/topics/permissions/overview](https://developer.android.com/guide/topics/permissions/overview "参考文献")
 
-								[中文文档](./README_EN.md)
+[中文文档](./README_EN.md)
 
 ----------
 
