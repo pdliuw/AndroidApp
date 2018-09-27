@@ -3,7 +3,6 @@ package com.air.permission;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 
-import com.air.permission.helper.PermissionHelper;
 import com.air.permission.rationale.AbstractRationaleFragment;
 import com.air.permission.rationale.DefaultRationale;
 
